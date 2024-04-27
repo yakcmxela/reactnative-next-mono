@@ -1,0 +1,27 @@
+.button {
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.primary {
+  background-color: #769cc0;
+  border: 2px solid #fff;
+  color: white;
+}
+
+.secondary {
+  background-color: #fff;
+  color: #6c757d;
+}
+
+.tertiary {
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #6c757d;
+}

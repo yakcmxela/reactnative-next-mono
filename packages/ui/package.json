@@ -1,26 +1,37 @@
 {
-  "name": "@repo/ui",
+  "name": "@todo/ui",
   "version": "0.0.0",
   "private": true,
   "exports": {
-    "./button": "./src/button.tsx",
-    "./card": "./src/card.tsx",
-    "./code": "./src/code.tsx"
+    "./react-native": "./src/react-native/index.ts",
+    "./nextjs": "./src/nextjs/index.ts"
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
     "generate:component": "turbo gen react-component"
   },
   "devDependencies": {
-    "@repo/eslint-config": "*",
-    "@repo/typescript-config": "*",
+    "@todo/eslint-config": "*",
+    "@todo/typescript-config": "*",
     "@turbo/gen": "^1.12.4",
-    "@types/node": "^20.11.24",
     "@types/eslint": "^8.56.5",
-    "@types/react": "^18.2.61",
-    "@types/react-dom": "^18.2.19",
+    "@types/mapbox-gl": "^3.1.0",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
     "eslint": "^8.57.0",
-    "react": "^18.2.0",
-    "typescript": "^5.3.3"
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@todo/types": "*",
+    "@types/react-datepicker": "^6.2.0",
+    "classnames": "^2.5.1",
+    "date-fns": "^3.6.0",
+    "mapbox-gl": "^3.3.0",
+    "next": "^14.2.2",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-native": "^0.73.6",
+    "react-native-date-picker": "^5.0.2"
   }
 }

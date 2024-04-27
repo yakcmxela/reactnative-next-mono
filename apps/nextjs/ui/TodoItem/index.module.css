@@ -1,0 +1,33 @@
+.todo {
+  transition: all 0.15s ease-in-out;
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  font-size: 16px;
+}
+
+.due {
+  font-size: 12px;
+  font-style: italic;
+  color: #666;
+  margin-left: auto;
+}
+
+.completed {
+  opacity: 0.5;
+}
+
+.todoEdit {
+  margin-left: 8px;
+  margin-right: 8px;
+  color: black;
+  font-size: 24px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}

@@ -1,0 +1,41 @@
+.toggleContainer {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+}
+
+.toggleButton {
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  background-color: black;
+  opacity: 0;
+  transform: scale(0);
+  transition: scale 0.5s, opacity 0.5s;
+}
+
+.active .toggleButton {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.checkboxToggle {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.checkboxToggle input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}

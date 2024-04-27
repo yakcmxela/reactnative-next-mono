@@ -1,0 +1,20 @@
+{
+  "name": "@todo/helpers",
+  "scripts": {
+    "test": "tsc",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "@todo/types": "*",
+    "typescript": "latest",
+    "zustand": "^4.3.8",
+    "next": "^14.1.1"
+  },
+  "devDependencies": {
+    "typescript": "^4.8.4"
+  },
+  "exports": {
+    "./utils": "./src/utils/index.ts",
+    "./wrappers": "./src/wrappers/index.ts"
+  }
+}

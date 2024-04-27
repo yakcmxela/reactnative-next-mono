@@ -1,0 +1,15 @@
+.todoList {
+  list-style: none;
+  padding-left: 0;
+  width: 600px;
+  max-width: 100%;
+}
+
+.todoList li {
+  border-bottom: 1px solid #eaeaea;
+  padding: 1rem;
+}
+
+.todoList li:last-of-type {
+  border-bottom: none;
+}

@@ -1,8 +1,17 @@
 {
-  "extends": "@repo/typescript-config/react-library.json",
+  "extends": "@todo/typescript-config/nextjs.json",
   "compilerOptions": {
-    "outDir": "dist"
+    "outDir": "dist",
+    "paths": {
+      "@todo/ui/*": ["./src/*"]
+    }
   },
-  "include": ["src"],
+  "include": [
+    "src",
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+, "../../apps/nextjs/ui/TodoEdit", "../../apps/nextjs/ui/TodoItem", "../../apps/nextjs/ui/TodoList", "../../apps/react-native/src/ui/todos", "../../global.d.ts", "../../apps/react-native/src/ui/navigation", "../../apps/react-native/src/navigation/RootNavigation", "../../apps/react-native/src/navigation/RootNavigation.ts", "../../apps/react-native/src/ui/TodoEdit", "../../apps/react-native/src/ui/TodoItem", "../../apps/react-native/src/ui/TodoList", "../../apps/react-native/src/ui/TodoItem.tsx", "../../apps/react-native/src/ui/TodoList.tsx", "../../apps/react-native/src/ui/TodoEdit.tsx", "../../apps/react-native/src/ui/index.tsx"  ],
   "exclude": ["node_modules", "dist"]
 }

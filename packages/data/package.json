@@ -1,0 +1,19 @@
+{
+  "name": "@todo/data",
+  "scripts": {
+    "test": "tsc",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "@todo/helpers": "*",
+    "@todo/types": "*",
+    "@todo/constants": "*",
+    "typescript": "latest"
+  },
+  "devDependencies": {
+    "typescript": "latest"
+  },
+  "exports": {
+    ".": "./src/index.ts"
+  }
+}
